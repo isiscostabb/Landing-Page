@@ -1,0 +1,467 @@
+
+/* G E R A L */
+
+:root{
+    --cor0: #D9D3C7;
+    --cor1: #B15818;
+    --cor2: #730217;
+    --cor3:#242311;
+    --cor4:#0D0D0B;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url(Extra/Margin\ DEMO.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url(Extra/Peach\ Cake.otf) format(opentype);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(Extra/fundo.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--cor3);      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--cor1);
+    border-radius: 20px;       
+  }
+
+
+
+
+/* T O P */
+
+
+header{
+    height: 150vh;
+    background-image: url(Extra/HEADER.png);
+    background-size: cover;
+}
+
+nav {
+    height: 7vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+nav > a{
+    text-decoration: none;
+    color: var(--cor0);
+    position: relative;
+    margin: 2%;
+    font-family: 'font2';
+}
+
+nav.scrolling{
+    background-color: var(--cor2);
+    transition: all 300ms ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.527);
+}
+
+
+
+
+
+/* C O N T E U D O */
+
+section.Content{
+    width: 100vw;
+}
+
+section.Content > h1{
+    color: var(--cor0);
+    font-family: 'font1';
+    font-size: 8vw;
+    letter-spacing: 1vw;
+    margin: 0 3%;
+}
+
+
+/* U M */
+
+div.um{
+    width: 100vw;
+    height: 80vh;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 13%;
+}
+
+div.left{
+    background-color: var(--cor1);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 50%;
+    cursor: pointer;
+    background-image: url(Extra/left.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+div.right{
+    background-color: var(--cor1);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 50%;
+    cursor: pointer;
+    background-image: url(Extra/right.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+div.cards{
+    width: 85vw;
+    height: 70vh;
+    position: relative;
+    transform: translate(0, -50%);
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    flex-flow: wrap column;
+    margin: 15px;
+    scroll-behavior: smooth;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+div.square{
+    background-color: var(--cor1);
+    height: 100%;
+    width: 300px;
+    position: relative;
+    border-radius: 5%;
+    margin-right: 30px;
+}
+
+.square.mix_saladas{
+    margin-right: 0px;
+}
+
+div.square_img{
+    background-color: #0D0D0B;
+    background-size: cover;
+    width: 90%;
+    height: 60%;
+    position: relative;
+    transform: translate(-50%);
+    top: 5%;
+    left: 50%;
+    border-radius: 3%;
+}
+
+div.square_img > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+div.square_txt{
+    width: 90%;
+    height: 10%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.square_txt > h1{
+    text-decoration: none;
+    color: var(--cor2);
+    position: relative;
+    font-family: 'font2';
+    font-size: 2.5em;
+}
+
+div.square_button{
+    background-color: var(--cor2);
+    width: 60%;
+    height: 10%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px black;
+}
+
+div.square_button > h1{
+    text-decoration: none;
+    color: var(--cor0);
+    position: relative;
+    font-family: 'font2';
+    font-size: 2em;
+}
+
+
+
+
+
+/* D O I S */
+
+div.dois{
+    width: 100vw;
+    height: 80vh;
+    position: static;
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+    background-image: url(Extra/SEC\ 2/background.png);
+    background-size: cover;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.541);
+}
+
+h1{
+    font-family: 'font2';
+    font-size: 3em;
+    text-align: center; 
+    color: var(--cor1);
+    text-shadow: 0 2px #000000;
+    height: min-content;
+    position: relative;
+    top: -5%;
+    margin: 6%;
+}
+
+div.quadro{
+    width: 65%;
+    height: 85%;
+    position: relative;
+    display: flex;
+    top: -5%;
+}
+
+div.quadro > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: block;
+    right: 0%;
+}
+
+.btn1{
+    border: 2px solid var(--cor1);
+    height: 5%;
+    width: 9%;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 2200px;
+    left: 48%;
+    box-shadow: 3px 3px 5px black;
+    background-color: var(--cor1);
+}
+
+.btn2{
+    border: 2px solid var(--cor1);
+    height: 5%;
+    width: 9%;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 2200px;
+    left: 60%;
+    box-shadow: 3px 3px 5px black;
+    background-color: #2A2010;
+}
+
+.btn3{
+    border: 2px solid var(--cor1);
+    height: 5%;
+    width: 9%;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 2200px;
+    left: 72%;
+    box-shadow: 3px 3px 5px black;
+    background-color: #2A2010;
+}
+
+.btn1:hover{
+    background-color: var(--cor1);
+    transition: .5s;
+}
+
+.btn2:hover{
+    background-color: var(--cor1);
+    transition: .5s;
+}
+
+.btn3:hover{
+    background-color: var(--cor1);
+    transition: .5s;
+}
+
+div.radios{
+    display: none;
+}
+
+
+
+
+/* T R E S */
+
+div.tres{
+    width: 100vw;
+    height: 100vh;
+    position: static;
+    margin-bottom: 10%;
+}
+
+div.title{
+    width: 100vw;
+    height: 30%;
+    position: relative;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Extra/SEC\ 3/listra.png);
+    background-size: cover;
+}
+
+.top{
+    font-family: 'font2';
+    font-size: 3em;
+    text-align: center; 
+    color: var(--cor0);
+    text-shadow: 0 2px #000000;
+    height: min-content;
+    position: relative;
+    top: 15%;
+}
+
+.bot{
+    font-family: 'font2';
+    font-size: 6em;
+    text-align: center; 
+    color: var(--cor1);
+    text-shadow: 0 2px #000000;
+    height: min-content;
+    position: relative;
+    top: -30%;
+    letter-spacing: 1vw;
+}
+
+div.categorias{
+    width: 100vw;
+    height: 70%;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+}
+
+div.quadrado{
+    height: 350px;
+    width: 300px;
+    transform: translate(0%, -50%);
+    top: 45%;
+    position: relative;
+    margin: 30px;
+    align-content: center;
+    cursor: pointer;
+}
+
+.quadrado > img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.quadrado > img:hover{
+    height: 270px;
+    width: 270px;
+}
+
+.quadrado > h1{
+    color: var(--cor0);
+}
+
+
+
+/* B O T T O M */
+
+footer{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 15vh;
+    position: static;
+    display: flex;
+}
+
+footer > h1{
+    color: var(--cor3);
+    position: relative;
+    margin: 0;
+    width: 19%;
+    height: min-content;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+footer > div.dots{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--cor3);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 65%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+footer > div.dots > img{
+    width: 100%;
+    height: 100%;
+}
+
+footer > div.dots:hover{
+    background-color: var(--cor2);
+    box-shadow: 2px 2px var(--cor3);
+}
